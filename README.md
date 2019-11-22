@@ -19,3 +19,27 @@ This list of patents was collected as part of the research for my dissertation *
 	- Folder 12: United States Patents: Composite Pictures & Trick Photography -- volume VI circa 1926-1931
 	- Folder 13: United States Patents: Composite Pictures & Trick Photography -- volume VII circa 1931-1932
 	- Folder 14: United States Patents: Composite Pictures & Trick Photography -- supplemental volume I circa 1890-1934, 1939
+
+### Wikidata
+
+The dataset has also been ingested into Wikidata.
+
+```SPARQL
+SELECT ?inventor ?inventorLabel ?patent ?patentLabel ?patentNumber ?publicationDate ?cpc 
+WHERE {
+  { ?patent wdt:P361 wd:Q73406392 } # part of the Westheimer collection
+  UNION
+  { wd:Q73409834 wdt:P2860 ?patent } # cited by Wall
+  UNION
+  { wd:Q73410099 wdt:P2860 ?patent } # cited by Hineline
+  UNION
+  { wd:Q73410716 wdt:P2860 ?patent } # cited by Stull
+  ?patent wdt:P61 ?inventor ;
+          wdt:P1246 ?patentNumber ;
+          wdt:P577 ?publicationDate ;
+          wdt:P5778 ?cpc .
+  SERVICE wikibase:label { bd:serviceParam wikibase:language "[AUTO_LANGUAGE],en". }
+}
+```
+
+<https://w.wiki/CX3>
