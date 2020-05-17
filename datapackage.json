@@ -1,0 +1,112 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "type": "string",
+            "format": "default",
+            "name": "patent",
+            "title": "Patent",
+            "description": "Number of the patent with country code"
+          },
+          {
+            "type": "string",
+            "format": "default",
+            "name": "country",
+            "title": "Country",
+            "description": "2 letter code: US, GB, FR, DE"
+          },
+          {
+            "type": "string",
+            "name": "url",
+            "title": "URL",
+            "description": "URL where the patent can be found, mostly Google",
+            "format": "default"
+          },
+          {
+            "name": "date_submitted",
+            "format": "default",
+            "title": "Submission Date",
+            "description": "date when then patent was submitted, not always available",
+            "type": "date"
+          },
+          {
+            "name": "date_issued",
+            "format": "default",
+            "title": "Publication Date",
+            "description": "date when then patent was issued",
+            "type": "date"
+          },
+          {
+            "name": "title",
+            "type": "string",
+            "format": "default",
+            "title": "Title",
+            "description": "patent title"
+          },
+          {
+            "name": "wikidata",
+            "type": "string",
+            "title": "Wikidata",
+            "description": "Wikidata concept URI",
+            "format": "uri"
+          },
+          {
+            "name": "inventor",
+            "type": "string",
+            "format": "default",
+            "description": "patent holders, separated by '; '",
+            "title": "Inventor"
+          },
+          {
+            "name": "assignee",
+            "format": "default",
+            "title": "Assignee",
+            "description": "patent assignees, separated by '; ', optional",
+            "type": "string"
+          },
+          {
+            "name": "cpc",
+            "type": "string",
+            "format": "default",
+            "title": "CPC",
+            "description": "classifications according to http://www.cooperativepatentclassification.org , separated by '; '"
+          },
+          {
+            "name": "collections",
+            "type": "string",
+            "format": "default",
+            "title": "Collections",
+            "description": "contexts of the patents defined here: https://github.com/birk/opticaleffectspatents , separated by '; '"
+          }
+        ]
+      },
+      "name": "opticaleffectspatents",
+      "path": "opticaleffectspatents.csv"
+    }
+  ],
+  "keywords": [
+    "patents",
+    "optical effects"
+  ],
+  "licenses": [
+    {
+      "name": "CC0-1.0",
+      "title": "CC0 1.0",
+      "path": "https://creativecommons.org/publicdomain/zero/1.0/"
+    }
+  ],
+  "name": "opticaleffectspatents",
+  "title": "Optical Effects Patents",
+  "description": "This list of patents was collected as part of the research for my dissertation Image as Collective: A History of Optical Effects in Hollywood's Studio System (2014). It does not claim to be a comprehensive list in the sense of containing all patents that cover the field but rather gathers those that were considered to be relevant at the time.",
+  "homepage": "https://github.com/birk/opticaleffectspatents",
+  "contributors": [
+    {
+      "title": "Birk Weiberg",
+      "role": "author"
+    }
+  ]
+}
