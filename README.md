@@ -2,7 +2,7 @@
 
 This list of patents was collected as part of the research for my dissertation *Image as Collective: A History of Optical Effects in Hollywood's Studio System* (2014). It does not claim to be a comprehensive list in the sense of containing all patents that cover the field but rather gathers those that were considered to be relevant at the time. There are a few key selections here and patents, which are part of one or more of these, are marked accordingly in the `collections` column. The `cpc` column provides information on each patent's classification according to the [Cooperative Patent Classification](http://www.cooperativepatentclassification.org).
 
-[![goodtables.io](https://goodtables.io/badge/github/birk/opticaleffectspatents.svg)](https://goodtables.io/github/birk/opticaleffectspatents)  
+[![Frictionless](https://github.com/birk/opticaleffectspatents/actions/workflows/frictionless.yaml/badge.svg)](https://repository.frictionlessdata.io/pages/dashboard.html?user=birk&repo=opticaleffectspatents&flow=frictionless)  
 [![DOI](https://zenodo.org/badge/98713492.svg)](https://zenodo.org/badge/latestdoi/98713492)
 
 ### Collections
